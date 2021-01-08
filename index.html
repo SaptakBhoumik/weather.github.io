@@ -35,7 +35,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
         
          :root {
-            --bg_main: #0088ff;
+            --bg_main: #0a1f44;
             --text_light: #fff;
             --text_med: #53627c;
             --text_dark: #1e2432;
@@ -289,6 +289,27 @@
             color: white;
         }
         
+        .input:active,
+        .input:hover {
+            border-color: #03a9f4;
+            box-shadow: 0 0 4px #03A9F4;
+            outline: none 0;
+        }
+        
+        .buttton:active,
+        .buttton:hover {
+            border-color: #03a9f4;
+            box-shadow: 0 0 4px #03A9F4;
+            outline: none 0;
+        }
+        
+        .foot:active,
+        .foot:hover {
+            border-color: #03a9f4;
+            box-shadow: 0 0 4px #03A9F4;
+            outline: none 0;
+        }
+        
         a:hover {
             background-color: red;
         }
@@ -336,8 +357,8 @@
         <div class="container" align="center">
             <h1 class="heading">WEATHER</h1>
             <form>
-                <input type="text" placeholder="Search for a city" autofocus>
-                <button type="submit">SEARCH</button>
+                <input type="text" placeholder="Search for a city" autofocus class="input">
+                <button type="submit" class="buttton">SEARCH</button>
                 <span class="msg"></span>
             </form>
             <footer class="foot"><a href="https://jarvissearch.herokuapp.com/" class="button">BACK</a>
